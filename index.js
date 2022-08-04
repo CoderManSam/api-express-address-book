@@ -125,6 +125,7 @@ app.post('/contacts/:id/meetings', (req, res) => {
     res.status(201).json({"meeting": meeting})
 })
 
+// VERSION THAT JUST CHECKS THE MEETINGID IS CORRECT
 // app.put('/contacts/:id/meetings/:meetingId', (req,res) => {
 
 //     // const {id} = req.params.id
@@ -150,6 +151,7 @@ app.post('/contacts/:id/meetings', (req, res) => {
 //     res.status(201).json({"meeting": updatedMeeting})
 // })
 
+// VERSION TO ENSURE BOTH ID AND MEETINGID ARE CORRECT 
 app.put('/contacts/:id/meetings/:meetingId', (req,res) => {
 
     const {id} = req.params
